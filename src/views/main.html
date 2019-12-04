@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <script>
+       
+ function func(){
+
+
+var arr="{{rw}}";
+var len = len.arr;
+var res = arr.split(",");
+
+
+ for(var i=0;i<len-1;i++){
+       document.getElementById("abc").innerHTML+= "<p >"+res[i]+"</p>" +"<br>";  
+ }
+}
+
+  </script>
+    <head>
+<link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+            <header>
+             <div class="right">
+                <a href="http://localhost:4242/">Logout</a>
+              </div>
+              
+                    <h2>MANAGE YOUR BOOKINGS</h2>
+
+                  </header>
+                  
+            <section>
+                    <nav>
+                          Enter Booking id: 
+                          <form name="f6" action="/update" >
+                              <input type="text" id="b1" class="fs"><br><br>
+                              <button class="button" onclick="id1()">Update Booking</button>
+
+                          </form><br><br>
+                          
+                          Enter Booking id:
+                          <form name="f7" action="/delete" method="POST" >
+                                <input type="text" name="bid" id="b2" class="fs"><br><br>
+                                <button class="button" type="submit">Delete Booking</button>
+                                
+                            </form>
+                       
+                        
+                       
+                      </ul>
+                    </nav>
+                    
+                    <article>
+                      <form action="/main" method="POST">
+                       <!-- <a  href="#">Booking history</a> -->
+                       <input type="submit" onclick="func()" value="Display History" name="submit">
+                        <p input type="text" id="data" ></p>
+                          <P id ="abc" > Details of booking recieved from database {{rw}} </P> 
+                        </form>             
+                    </article>
+                  </section>
+                  
+                  <footer>
+                    <a href="http://localhost:4242/booking1">Make a new Appointment</a>
+                  </footer>
+                  
+                
+                  
+    </body>
+</html>

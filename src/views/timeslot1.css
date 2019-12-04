@@ -1,0 +1,20 @@
+.box {
+   
+    background-color: grey;
+    width: 500px;
+    border: 10px solid white;
+    padding: 50px;
+
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-block-start: 10px; 
+    
+  }
+  body{
+    background-color: black;
+}

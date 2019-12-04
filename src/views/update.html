@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="update.css">
+    <script>
+    function getslots()
+    {
+
+    }
+    
+    // code to get time slots dynamically
+    
+    
+    
+    
+    </script>
+    
+    </head>
+    <body>
+        <div class="box">
+        <form action="/dateUpdate" name="fp" method="POST">
+           Date: <input type="date">
+        </form><br><br>
+        <form name="fup">
+            Stylist:    <select  required class="dropdown" name="update" onchange="display(this.form.update)">
+                    <option value="default.html">Select Stylist</option> 
+                    <option value="timeslot1.html" >Person_1</option>
+                    <option value="timeslot1.html" >Person_2</option>
+                    <!-- get the stylist name from db using mustache -->
+            
+                    <!-- dynamic timeslots displayed here -->
+                    <select id="up1" onclick="getslots()"></select>
+        </form>
+    </div>
+    </body>
+</html>

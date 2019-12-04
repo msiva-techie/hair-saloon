@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="booking3.css">
+    
+</head>
+<body>
+    <div class="box1">
+<form name="f5" action="/booking3" method="POST" >
+<p>First Name:</p>
+<input type="text" name="fname" pattern="[a-zA-Z]*" required="" ><br>
+<p>Last Name:</p>
+<input type="text" name="lname" pattern="[a-zA-Z]*" required="" ><br>
+<p>Email:</p>
+<input type="email" name="mail" required=""><br>
+<p>Contact Number:</p>
+<input type="tel" pattern="[0-9]{10}" name="pno"  required=""><br><br>
+<input type="checkbox" name="check" value="check">Email me my booking details.<br><br>
+<input type="submit" value="Confirm Booking" name="confirm">
+</form>
+<form method="POST" action="http://localhost:4242/main"><input type="submit" value="HomePage" name="confirm"></form>
+</div>
+</body>
+</html>

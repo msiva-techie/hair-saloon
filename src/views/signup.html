@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" href="signup.css"> </head>
+<body>
+    <div class="box">
+            <form action="/signup" name="f2"  method="post" onsubmit="return(verify())">
+                <img src="logo.jpg"  id="image" height="75" width="75">
+                <h3 id="heading">SIGN UP </h3>
+               
+<input type="text" name="Username" placeholder="Username" class="element" required="">
+<br><br>
+<input type="email" name="email" placeholder="Email" class="element" required="">
+<br><br>
+<input type="password" name="password1" placeholder="Password" class="element" required="">
+<br><br>
+<input type="password" name="password2" placeholder="Confirm Password" class="element" required="">
+<br><br>
+<input type="submit"  class="element" value="SignUp">
+<p> Already have an account?</p>
+<a href="login" >Login</a> 
+
+</form>
+</div>
+</body>
+<script>
+function verify()
+{
+    var pwd1=document.forms["f2"]["password1"].value;
+    var pwd2=document.forms["f2"]["password2"].value;
+if(pwd1!=pwd2)
+{
+    alert("password mismatch")
+    return false;
+}
+}
+</script>
+ 
+
+
+
+</html>

@@ -1,0 +1,33 @@
+.box {
+    background-color: grey;
+    width: 200px;
+   
+  
+    border: 10px solid white;
+    padding: 50px;
+
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-block-start: 10px;
+}
+.element {
+    border: 2px solid black;
+    height: 30px;
+    width: 190px;
+    padding: 5px;
+}
+body {
+    background-color: black;
+}
+#heading {
+font-family: 'Courier New', Courier, monospace;
+
+}
+#image {
+    border-radius: 50%;
+}

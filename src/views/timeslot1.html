@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel= "stylesheet" href="timeslot1.css"> 
+<head> 
+ <script>
+       
+       
+ function func(){
+
+ var len="{{cnt}}";
+ var arr="{{x}}";
+ var res = arr.split(",");
+
+
+  for(var i=0;i<len-1;i++){
+        document.getElementById("abc").innerHTML+= "<button type='submit' id ="+i+" name='button_"+i+"' value="+res[i]+"  >"+res[i]+"</button>" +"<br>";  
+  }
+ }
+
+</script> 
+</head>
+
+<body>
+            <div class="box">
+ <form class="f4"  name="f4" action ="http://localhost:4242/timeslot1"  method="POST">  
+ <div id ="abc">
+<button onclick="func()" name="slots">Timeslots</button> 
+<br>
+ </div>
+
+ </form>
+</div>
+</body>
+</html>
