@@ -28,5 +28,10 @@ Web Apllication for making hair-dressing appointment.
 # Notification:
 1. Get all booking details and other alerts/notifications through mail!
 
+# Steps to run:
+1. Connect to MySQL database (preferably use Xampp).
+2. Run the login.js file with npm/node.
+3. login.js internally calls all other API's.
+4. Go to browser and visit localhost:4242
 
 
